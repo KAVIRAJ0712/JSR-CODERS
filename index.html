@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">🛍️ ShopEase</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Discover Your Style</h1>
+        <p>Shop the latest trends at unbeatable prices!</p>
+    </header>
+
+    <section class="products">
+        <div class="product" data-name="Stylish Jacket" data-price="59">
+            <img src="https://via.placeholder.com/200" alt="Stylish Jacket">
+            <h3>Stylish Jacket</h3>
+            <p>$59</p>
+            <button onclick="addToCart('Stylish Jacket', 59)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Sneakers" data-price="79">
+            <img src="https://via.placeholder.com/200" alt="Sneakers">
+            <h3>Sneakers</h3>
+            <p>$79</p>
+            <button onclick="addToCart('Sneakers', 79)">Add to Cart</button>
+        </div>
+
+        <div class="product" data-name="Casual Shirt" data-price="29">
+            <img src="https://via.placeholder.com/200" alt="Casual Shirt">
+            <h3>Casual Shirt</h3>
+            <p>$29</p>
+            <button onclick="addToCart('Casual Shirt', 29)">Add to Cart</button>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
